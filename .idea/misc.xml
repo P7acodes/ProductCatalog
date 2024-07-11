@@ -6,6 +6,8 @@
         <option value="$PROJECT_DIR$/service-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/service-client/pom.xml" />
         <option value="$PROJECT_DIR$/service-fraude/pom.xml" />
+        <option value="$PROJECT_DIR$/service-product/pom.xml" />
+        <option value="$PROJECT_DIR$/service-produit/pom.xml" />
         <option value="$PROJECT_DIR$/service-register/pom.xml" />
         <option value="$PROJECT_DIR$/service-configuration/pom.xml" />
       </list>

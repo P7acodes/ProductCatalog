@@ -7,6 +7,10 @@
     <file url="file://$PROJECT_DIR$/service-configuration/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-fraude/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-fraude/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-product/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-product/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-produit/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-produit/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-proxy/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-proxy/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/service-register/src/main/java" charset="UTF-8" />

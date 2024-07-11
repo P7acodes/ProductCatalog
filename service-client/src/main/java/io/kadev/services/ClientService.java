@@ -43,13 +43,16 @@ public class ClientService {
         double somme = 0.0;
         if(produits == null || produits.isEmpty()) return "Cette commande est vide";
         for (Map.Entry entry : produits.entrySet()) {
-//            if(!gestionProduits.isDisponible((String) entry.getKey())) return "Commande non passé, produit en rupture de stock";
-//            somme += gestionProduits.getPrix((String) entry.getKey());
+            log.info((String) entry.getKey() +  entry.getValue());
+            if(!gestionProduits.isDisponible((String) entry.getKey(), (Integer) entry.getValue())) return "Commande non passé, produit en rupture de stock";
+            somme += gestionProduits.getPrix((String) entry.getKey());
         }
         if(!detecteurFraude.isValid(client.getCarteBancaire())) {
             return "Fraude détectée !!!";
         }
-//        gestionProduits.updateStock(produits);
+        String idCommande = gestionProduits.updateStock(produits);
+        client.getCommandes().add(idCommande);
+        clientRepository.save(client);
         return "Félicitation commande effectuer, somme prélevée est de ".concat(String.valueOf(somme));
     }
 
