@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringbootMicroserviceArchitecture.iml" filepath="$PROJECT_DIR$/.idea/SpringbootMicroserviceArchitecture.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-client/service-client.iml" filepath="$PROJECT_DIR$/service-client/service-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-configuration/service-configuration.iml" filepath="$PROJECT_DIR$/service-configuration/service-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-fraude/service-fraude.iml" filepath="$PROJECT_DIR$/service-fraude/service-fraude.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-proxy/service-proxy.iml" filepath="$PROJECT_DIR$/service-proxy/service-proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/service-register/service-register.iml" filepath="$PROJECT_DIR$/service-register/service-register.iml" />
     </modules>

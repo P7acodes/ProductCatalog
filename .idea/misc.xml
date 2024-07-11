@@ -4,10 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/service-proxy/pom.xml" />
-        <option value="$PROJECT_DIR$/service-company/pom.xml" />
+        <option value="$PROJECT_DIR$/service-client/pom.xml" />
+        <option value="$PROJECT_DIR$/service-fraude/pom.xml" />
         <option value="$PROJECT_DIR$/service-register/pom.xml" />
         <option value="$PROJECT_DIR$/service-configuration/pom.xml" />
-        <option value="$PROJECT_DIR$/service-client/pom.xml" />
       </list>
     </option>
   </component>

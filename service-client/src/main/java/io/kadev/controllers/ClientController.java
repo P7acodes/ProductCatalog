@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 
 @RestController
@@ -39,6 +40,13 @@ public class ClientController {
                                @RequestParam("ncb") String ncb,
                                @RequestParam("cscb") Long cscb) {
         return clientService.createNewClient(prenom, nom, null, new CarteBancaire(ncb,cscb,nom));
+    }
+
+    @PostMapping("/commander")
+    public String commander(@RequestBody HashMap<String, Integer> produits,
+                            @RequestParam("idClient") String idClient) {
+        Client client = clientService.client(idClient);
+        return clientService.passerUneCommande(produits, client);
     }
 
 }
