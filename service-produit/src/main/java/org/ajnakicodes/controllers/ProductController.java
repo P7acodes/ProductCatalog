@@ -65,4 +65,9 @@ public class ProductController {
         return UUID.randomUUID().toString();
     }
 
+    @GetMapping("/sortedByPurchases")
+    public List<Product> getProductsOrderedByNombreAchats() {
+        return productService.getProductsOrderedByNombreAchats();
+    }
+
 }

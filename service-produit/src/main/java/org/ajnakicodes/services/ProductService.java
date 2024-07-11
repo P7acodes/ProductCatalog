@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class ProductService {
@@ -26,4 +27,11 @@ public class ProductService {
     public List<Product> products() {return productRepository.findAll();}
 
     public Product product(String id){return productRepository.findById(id).get();}
+
+    public List<Product> getProductsOrderedByNombreAchats() {
+        List<Product> products = productRepository.findAll();
+        return products.stream()
+                .sorted((p1, p2) -> p2.getNombreAchats().compareTo(p1.getNombreAchats()))
+                .collect(Collectors.toList());
+    }
 }
